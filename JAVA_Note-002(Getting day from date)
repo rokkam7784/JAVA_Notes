@@ -1,0 +1,17 @@
+import java.time.LocalDate;
+import java.util.*;
+
+public class question{
+  public static void main(String[] args){
+  Scanner y = new Scanner(System.in);
+  
+  int year = y.nextInt();
+  int month = y.nextInt();
+  int day = y.nextInt();
+  y.close();
+  
+  LocalDate dt = LocalDate(year,month,day);
+  System.out.println(dt.getDayOfWeek());
+  
+  }
+}
