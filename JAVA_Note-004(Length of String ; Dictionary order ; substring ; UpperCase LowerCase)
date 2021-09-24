@@ -1,0 +1,29 @@
+package csw;
+
+import java.text.NumberFormat; 
+import java.util.*;
+
+public class question {
+
+	public static void main(String[] args) {
+		Scanner y = new Scanner(System.in);
+		String a = y.nextLine();
+		String b = y.nextLine();
+		int lengthS = a.length()+b.length();
+		System.out.println(lengthS);
+		if (a.compareTo(b)>0) {
+			System.out.println("Yes");
+		}
+		else {
+			System.out.println("No");
+		}
+		
+		a = a.substring(0,1).toUpperCase() + a.substring(1);
+		b = b.substring(0,1).toUpperCase() + b.substring(1);
+		System.out.println(a+" "+b);
+		
+		
+		
+	}
+
+}
