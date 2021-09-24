@@ -1,0 +1,29 @@
+package csw;
+
+import java.text.NumberFormat; 
+import java.util.*;
+
+public class question {
+
+	public static void main(String[] args) {
+		Scanner y = new Scanner(System.in);
+		String s = y.nextLine();
+		int l = s.length();
+		String palindrome = "Yes";
+		for(int i = 0;i<l;i++) {
+
+//			System.out.println(s.charAt(i));
+//			
+//			System.out.println(s.charAt(l-i-1));
+//		
+			if(s.charAt(i)!=s.charAt(l-i-1)) {
+				palindrome = "No";
+			}
+		}
+		
+		System.out.println(palindrome);
+		
+		
+	}
+
+}
