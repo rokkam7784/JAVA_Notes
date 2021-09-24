@@ -1,0 +1,19 @@
+package csw;
+
+import java.text.NumberFormat; 
+import java.util.*;
+
+public class question {
+
+	public static void main(String[] args) {
+		Scanner y = new Scanner(System.in);
+		String s = y.nextLine();
+		String ab = y.nextLine();
+		String[] splited = ab.split(" ");
+		int a = Integer.parseInt(splited[0]);
+		int b = Integer.parseInt(splited[1]);
+		System.out.println(s.substring(a,b));
+
+	}
+
+}
