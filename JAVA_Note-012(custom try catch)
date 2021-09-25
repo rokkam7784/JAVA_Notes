@@ -31,3 +31,40 @@ public class Solution {
             }
         }
     }
+    
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+package csw;
+import java.util.*;
+import java.math.*;
+
+class myException{
+	public static int llgm(int b, int h) throws Exception{
+		if (b<=0||h<=0) {
+			throw new Exception("Breadth and height must be positive");
+		}
+		else {
+			return (int)b*h;
+		}
+		
+	}
+}
+
+
+public class question2 {
+
+	public static void main(String[] args) {
+		Scanner y = new Scanner(System.in);
+		myException mye = new myException();
+		int b = y.nextInt();
+		int h = y.nextInt();
+		try {
+			System.out.println(mye.llgm(b, h));
+		}
+		catch (Exception e) {
+			System.out.println(e);
+		}
+		
+	}
+}
