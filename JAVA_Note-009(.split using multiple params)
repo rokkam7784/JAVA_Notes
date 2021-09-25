@@ -1,0 +1,20 @@
+package csw;
+import java.util.*;
+
+import java.text.NumberFormat; 
+
+public class question {
+
+	
+	public static void main(String[] args) {
+		Scanner y = new Scanner( System.in);
+		
+		String s = "hello?peter";
+		String[] st = s.split("[,?.@!+-]+");
+		for (String a : st)
+            System.out.println(a);
+ 
+        
+	}
+
+}
