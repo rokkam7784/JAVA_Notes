@@ -1,0 +1,35 @@
+package csw;
+import java.util.*;
+
+import java.text.NumberFormat; 
+
+public class question {
+
+	
+	public static void main(String[] args) {
+		Scanner y = new Scanner( System.in);
+		
+		String names[]=new String[y.nextInt()];
+		y.nextLine();
+		
+		for (int i = 0 ;i<names.length;i++ ) { 
+			names[i]=y.nextLine();;
+		}
+        
+		final String regularExpression = "^[a-zA-Z][a-zA-Z0-9_]{7,29}$";
+		
+		
+		for (int i = 0 ;i <names.length;i++ ) {
+//			System.out.println(names[i]);
+			String username = names[i];
+			if(username.matches(regularExpression)) {
+				System.out.println("valid");
+			}
+			else {
+				System.out.println("Invalid");	
+			}
+		}
+        
+	}
+
+}
